@@ -2,7 +2,7 @@
     "name": "debugcommand",
     "displayName": "DebugCommand",
     "description": "Adds a vscode command to launch a configuration without selecting it first",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "publisher": "iosifak",
     "engines": {
         "vscode": "^1.27.0"
