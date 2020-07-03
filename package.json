@@ -1,8 +1,8 @@
 {
     "name": "debugcommand",
     "displayName": "DebugCommand",
-    "description": "Adds a vscode command to launch a configuration without selecting it first",
-    "version": "0.2.0",
+    "description": "Adds a vscode command to launch a configuration without selecting it first and one to combine multiple tasks into one",
+    "version": "0.3.1",
     "publisher": "iosifak",
     "engines": {
         "vscode": "^1.27.0"
@@ -11,14 +11,18 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:debugcommand.launch"
+        "onCommand:debugcommand.launch",
+        "onCommand:debugcommand.quickPick"
     ],
     "main": "./out/extension",
     "contributes": {
-        "commands": [
-            {
+        "commands": [{
                 "command": "debugcommand.launch",
                 "title": "Launches the given launch.json configuration"
+            },
+            {
+                "command": "debugcommand.quickPick",
+                "title": "Presents multiple tasks as a choice. Combines several tasks into one. Separate other tasks using semicolon"
             }
         ]
     },
