@@ -1,4 +1,4 @@
-out
-node_modules
-.vscode-test/
-*.vsix
+/debugcommand-0.2.0.vsix
+/debugcommand-0.3.0.vsix
+/node_modules
+/out
